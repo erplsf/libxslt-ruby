@@ -17,6 +17,5 @@ class TextLibXslt < Test::Unit::TestCase
     assert_instance_of(String, XSLT::NAMESPACE_SAXON)
     assert_instance_of(String, XSLT::NAMESPACE_XT)
     assert_instance_of(String, XSLT::NAMESPACE_XALAN)
-    assert_instance_of(String, XSLT::NAMESPACE_NORM_SAXON)
   end
 end

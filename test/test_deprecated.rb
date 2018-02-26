@@ -31,7 +31,6 @@ class TestDeprecated < Test::Unit::TestCase
     assert_instance_of(String, XML::XSLT::NAMESPACE_SAXON)
     assert_instance_of(String, XML::XSLT::NAMESPACE_XT)
     assert_instance_of(String, XML::XSLT::NAMESPACE_XALAN)
-    assert_instance_of(String, XML::XSLT::NAMESPACE_NORM_SAXON)
   end
 
   def test_new

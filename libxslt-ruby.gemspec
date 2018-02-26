@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'date'
 
 # Determine the current version of the software
 version = File.read('ext/libxslt/version.h').match(/\s*RUBY_LIBXSLT_VERSION\s*['"](\d.+)['"]/)[1]
@@ -14,8 +15,8 @@ Gem::Specification.new do |spec|
 
   # Determine the current version of the software
   spec.version = version
-  spec.author = "Charlie Savage"
-  spec.email = "libxml-devel@rubyforge.org"
+  spec.authors = ["Charlie Savage", "Andriy Mykhaylyk"]
+  spec.email = ["libxml-devel@rubyforge.org", "erp.lsf@gmail.com"]
   spec.add_dependency('libxml-ruby','>=2.4.0')
   spec.platform = Gem::Platform::RUBY
   spec.require_paths = ["lib", "ext/libxslt"]
